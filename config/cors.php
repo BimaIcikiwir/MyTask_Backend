@@ -19,7 +19,10 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['https://my-task-frontend-tan.vercel.app'],
+    'allowed_origins' => [
+        'https://my-task-frontend-tan.vercel.app',
+        'https://www.ariabimadarmawan.my.id'
+    ],
 
     'allowed_origins_patterns' => [],
 
