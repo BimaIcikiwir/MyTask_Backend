@@ -39,9 +39,10 @@ class AuthController extends Controller
 
     public function register(RegisterRequest $request)
     {
+        // Ini array
         $validated = $request->validated();
 
-        $validated->role = "user";
+        $validated["role"] = "user";
 
         $user = User::create($validated);
 
