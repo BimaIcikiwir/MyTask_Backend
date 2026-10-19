@@ -42,7 +42,7 @@ class AuthController extends Controller
         // Ini array
         $validated = $request->validated();
 
-        $validated["role"] = "user";
+        $validated["role"] = "member";
 
         $user = User::create($validated);
 
